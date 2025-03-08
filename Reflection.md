@@ -1,5 +1,5 @@
 ### Patient Needs
-- **User-Friendliness**: Patients require an intuitive, easy-to-use interface that minimizes the steps to schedule appointments.
+- **User-Friendly**: Patients require an intuitive, easy-to-use interface that minimizes the steps to schedule appointments.
 - **Appointment Availability**: Patients may struggle if the system doesn’t show real-time availability or has a long waitlist for appointments.
 - **Privacy and Security**: Ensuring that personal and medical data is protected and compliant with regulations is critical.
 - **Notifications**: Patients want timely reminders or notifications about upcoming appointments, changes, or cancellations.
