@@ -1,7 +1,7 @@
 ### Patient Needs
 - **User-Friendliness**: Patients require an intuitive, easy-to-use interface that minimizes the steps to schedule appointments.
 - **Appointment Availability**: Patients may struggle if the system doesn’t show real-time availability or has a long waitlist for appointments.
-- **Privacy and Security**: Ensuring that personal and medical data is protected and compliant with regulations like HIPAA (in the U.S.) is critical.
+- **Privacy and Security**: Ensuring that personal and medical data is protected and compliant with regulations is critical.
 - **Notifications**: Patients want timely reminders or notifications about upcoming appointments, changes, or cancellations.
 - **Cancelation and Rescheduling**: Ensuring that patients have a straightforward way to cancel or reschedule without penalties, yet minimizing no-shows and late cancellations.
 - **Wait Times**: Some patients might be frustrated by long wait times or delays due to doctor availability or system inefficiencies, which can lead to dissatisfaction.
