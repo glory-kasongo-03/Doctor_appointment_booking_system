@@ -8,7 +8,7 @@
 - **Acceptance Criteria:**
     - Users can sign up with valid credentials and receive an email confirmation.
     - OTP authentication works within 30 seconds of request.
-    - Invalid login attempts are logged after 3 failed attempts.
+    - Invalid login attempts are recorded after 3 failed attempts.
 
 ### 2. Appointment Scheduling & Availability Check
 - **Requirement:** The system shall allow patients to view available slots and book an appointment based on doctor availability.
@@ -88,7 +88,7 @@
 - **Acceptance Criteria:**
     - Doctors can access relevant patient history through the appointment interface.
     - EHR data access follows privacy permissions and logs retrievals.
-    - Sync errors are logged, and retry mechanisms are in place.
+    - Sync errors are recorded, and retry mechanisms are in place.
 
 ### 12. User Role & Permissions Management
 - **Requirement:** The system shall allow administrators to assign user roles (patient, doctor, receptionist, admin) with specific access permissions.
@@ -199,7 +199,7 @@
 | Scalability | 10x User Load Handling | 10,000+ concurrent users |
 | | Load Balancing | Uptime maintained if server fails |
 | Security | Data Encryption (HIPAA/GDPR) | AES-256 encryption |
-| | Role-Based Access Control | Unauthorized access is logged |
+| | Role-Based Access Control | Unauthorized access is recorded |
 | Performance | Response Time < 3 sec | 95% queries < 1 sec |
 | | 99.9% Uptime | Max downtime < 43 min/month |
 
