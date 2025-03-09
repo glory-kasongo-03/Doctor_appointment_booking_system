@@ -38,8 +38,8 @@
 - **Requirement:** The system shall track patient non-attendance and enforce penalties such as automatic appointment restrictions after multiple missed visits.
 - **Stakeholders Addressed:** Healthcare Administrators, Doctors
 - **Acceptance Criteria:**
-    - If a patient fails to check in within 15 minutes of the appointment, they are marked as a non-attendance.
-    - Patients with 3+ non-attendance receive a warning notification.
+    - If a patient fails to check in within 30 minutes of the appointment, they are marked as a non-attendance.
+    - Patients with 5+ non-attendance receive a warning notification.
     - Clinics can configure penalties (e.g., restricted booking for a week).
 
 ### 6. Secure Patient Data Storage & Compliance
