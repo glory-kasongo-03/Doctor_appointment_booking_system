@@ -111,7 +111,7 @@
     - Accessibility compliance with WCAG 2.1 (for visually impaired users).
 
 #### 1.2 Multi-Language Support
-- **Requirement:** The system shall support at least three languages (e.g., English, Spanish, French) for better accessibility.
+- **Requirement:** The system shall support at least three languages (e.g., English, Xhosa, Afrikaans) for better accessibility.
 - **Acceptance Criteria:**
     - Users can switch languages without reloading the page.
     - All key system messages are translated accurately.
