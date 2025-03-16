@@ -1,17 +1,4 @@
-### Patient Needs
-- **User-Friendly**: Patients require an intuitive, easy-to-use interface that minimizes the steps to schedule appointments.
-- **Appointment Availability**: Patients may struggle if the system doesn’t show real-time availability or has a long waitlist for appointments.
-- **Privacy and Security**: Ensuring that personal and medical data is protected and compliant with regulations is critical.
-- **Notifications**: Patients want timely reminders or notifications about upcoming appointments, changes, or cancellations.
-- **Cancelation and Rescheduling**: Ensuring that patients have a straightforward way to cancel or reschedule without penalties, yet minimizing non-attendance and late cancellations.
-- **Wait Times**: Some patients might be frustrated by long wait times or delays due to doctor availability or system inefficiencies, which can lead to dissatisfaction.
-
-### Doctor Needs
-- **Time Management**: Doctors need to efficiently manage their schedules, ensuring the system doesn’t overbook or underutilize their time.
-- **Customization**: Doctors may want control over their availability (e.g., personal time, or emergency appointments).
-- **Data Access**: Doctors need easy access to patient histories, appointment details, and real-time updates to ensure smooth consultations.
-
-### Administrative Needs 
-- **Resource Management**: Admins need the system to help manage not just the doctor’s time but also resources like rooms or medical equipment.
-- **Patient Flow**: Administrators may need insights into appointment volume, cancellations, and no-shows to better manage patient flow and ensure an efficient operation.
-- **Data Management**: Admins need to track appointment history, patient records, and potentially handle billing/invoice generation.
+### Balancing Stakeholders need.
+It was challenging to balance Stakeholders need because taking into account each stakeholdrt and their role in the system. For instance for Patients required a system that is user-friendly and reduce the steps in schedule appoitnments and also making sure that their data will be secured and well protected. Doctors should have the ability to manage their schedules and their availability efficiently.
+### Translating Requirements to Use Cases/Tests
+Translating the functional and non-functional into use cases/tests was challenging because it required to go through a long thingking process in terms of each actor role and the different actions they will have to undertake while using the system. Every steps need to be mentionned and explain.
