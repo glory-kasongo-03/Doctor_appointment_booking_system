@@ -3,10 +3,10 @@
 ## 1. Register and Login
 
 ### Description
-Allows patients to create an account and authenticate using OTP or email verification.
+The patient creates an account and authenticates using an OTP or email verification.
 
 ### Actor
-Patients
+Patient
 
 ### Preconditions
 - The patient must have a valid email or phone number.
@@ -18,7 +18,7 @@ Patients
 
 ### Basic Flow
 1. The patient enters an email or phone number.
-2. The system sends an OTP to the provided contact.
+2. The system sends an OTP to the patient.
 3. The patient enters the OTP.
 4. The system verifies the OTP and creates an account.
 5. The patient is redirected to the dashboard.
@@ -31,7 +31,7 @@ Patients
 ## 2. Book Appointment
 
 ## Description
-Patients can book an appointment with an available doctor.
+The patient books an appointment with an available doctor.
 
 ### Actor
 Patients
@@ -58,7 +58,7 @@ Patients
 ## 3. Cancel/Reschedule Appointment
 
 ### Description
-Allow Patients to cancel or reschedule an appointment.
+The patient cancels or reschedules an appointment.
 
 ### Actor
 Patient
@@ -82,13 +82,13 @@ Patient
 8. Notifications are sent to the doctor and patient. 
 
 ### Alternative Flows
-- **Too Late to Cancel**: If cancellation is past the deadline, the system restricts action.
+- **Too Late to Cancel**: The system restricts action if cancellation is past the deadline.
 - **No Available Reschedule Slots**: The system prompts the user to try another time.
 
 ## 4. Receive Appointment Reminders
 
 ### Description
-Patients receive automated reminders before their scheduled appointments.
+The patient receives automated reminders before their scheduled appointments.
 
 ### Actor
 Patient
@@ -111,7 +111,7 @@ Patient
 ## 5. Manage Doctor Availability
 
 ### Description
-Doctors can set and modify their availability.
+The doctor sets and modify their availability.
 
 ### Actor
 Doctor
@@ -129,12 +129,12 @@ Doctor
 3. The system updates the schedule.
 
 ### Alternative Flows
-- **Conflicting Changes**: If availability conflicts with existing bookings, the system alerts the doctor.
+- **Conflicting Changes**: The system alerts the doctor if availability conflicts with existing bookings.
 
 ## 6. View & Approve Appointments
 
 ### Description
-Doctors can review and confirm appointment requests.
+The doctor reviews and confirms appointment requests.
 
 ### Actor
 Doctor
@@ -159,7 +159,7 @@ Doctor
 ## 7. Manually Book Appointments (Walk-ins)
 
 ### Description
-Receptionists can book appointments for walk-in patients.
+The hotel receptionist books appointments for walk-in patients.
 
 ### Actor
 Hospital Receptionist
@@ -185,7 +185,7 @@ Hospital Receptionist
 ## 8. Generate Reports
 
 ### Description
-Administrators can generate analytics reports on system usage.
+The administrator generates analytics reports on system usage.
 
 ### Actor
 Administrator
