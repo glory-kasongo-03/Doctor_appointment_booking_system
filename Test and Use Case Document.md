@@ -2,8 +2,11 @@
 
 ## 1. Register and Login
 
+### Description
+Allows patients to create an account and authenticate using OTP or email verification.
+
 ### Actor
-Patient
+Patients
 
 ### Preconditions
 - The patient must have a valid email or phone number.
@@ -27,8 +30,11 @@ Patient
 
 ## 2. Book Appointment
 
+## Description
+Patients can book an appointment with an available doctor.
+
 ### Actor
-Patient
+Patients
 
 ### Preconditions
 - The patient must be logged in.
@@ -47,9 +53,12 @@ Patient
 
 ### Alternative Flows
 - **No Available Slots**: The system displays an error and suggests alternative dates.
-- **Technical Issues**: If booking fails, the system logs the issue and prompts the user to retry.
+- **Technical Issues**: If the booking fails, the system logs the issue and prompts the user to retry.
 
 ## 3. Cancel/Reschedule Appointment
+
+### Description
+Allow Patients to cancel or reschedule an appointment.
 
 ### Actor
 Patient
@@ -69,7 +78,7 @@ Patient
 4. The system updates the appointment.
 5. A confirmation is sent.
 6. If cancelling, the appointment is removed.
-7. the system records the cancellation.
+7. The system records the cancellation.
 8. Notifications are sent to the doctor and patient. 
 
 ### Alternative Flows
@@ -77,6 +86,9 @@ Patient
 - **No Available Reschedule Slots**: The system prompts the user to try another time.
 
 ## 4. Receive Appointment Reminders
+
+### Description
+Patients receive automated reminders before their scheduled appointments.
 
 ### Actor
 Patient
@@ -98,6 +110,9 @@ Patient
 
 ## 5. Manage Doctor Availability
 
+### Description
+Doctors can set and modify their availability.
+
 ### Actor
 Doctor
 
@@ -117,6 +132,9 @@ Doctor
 - **Conflicting Changes**: If availability conflicts with existing bookings, the system alerts the doctor.
 
 ## 6. View & Approve Appointments
+
+### Description
+Doctors can review and confirm appointment requests.
 
 ### Actor
 Doctor
@@ -138,7 +156,10 @@ Doctor
 ### Alternative Flows
 - **Doctor Rejects Appointment**: The patient is notified and prompted to reschedule.
 
-## 7. Manually Book Appointment (Walk-ins)
+## 7. Manually Book Appointments (Walk-ins)
+
+### Description
+Receptionists can book appointments for walk-in patients.
 
 ### Actor
 Hospital Receptionist
@@ -162,6 +183,9 @@ Hospital Receptionist
 - **Duplicate Booking**: If the patient already has an appointment, a warning is displayed.
 
 ## 8. Generate Reports
+
+### Description
+Administrators can generate analytics reports on system usage.
 
 ### Actor
 Administrator
@@ -190,22 +214,22 @@ Administrator
 
 | Test ID | Requirement ID | Description | Steps | Expected Result | Actual Result | Status |
 |---------|---------------|-------------|-------|----------------|---------------|--------|
-| TC1 | FR1 | Verify patient registration and authentication | 1. Navigate to the registration page. 2. Enter valid details. 3. Submit form. 4. Try logging in. | Patient is registered and can log in successfully. |...|...|
-| TC2 | FR2 | Validate appointment scheduling | 1. Log in as a patient. 2. Select a doctor and available slot. 3. Confirm appointment. | Appointment is scheduled successfully. |...|...|
+| TC1 | FR1 | Verify patient registration and authentication | 1. Navigate to the registration page. 2. Enter valid details. 3. Submit the form. 4. Try logging in. | Patient is registered and can log in successfully. |...|...|
+| TC2 | FR2 | Validate appointment scheduling | 1. Log in as a patient. 2. Select a doctor and available slot. 3. Confirm appointment. | The appointment is scheduled successfully. |...|...|
 | TC3 | FR3 | Verify automated appointment reminders | 1. Schedule an appointment. 2. Wait for the reminder time. | Patient receives a reminder via email/SMS. |...|...|
-| TC4 | FR4 | Validate rescheduling & cancellation | 1. Log in as a patient. 2. Navigate to existing appointment. 3. Reschedule or cancel appointment. | Appointment is updated or cancelled successfully. |...|...|
-| TC5 | FR5 | Test non-attendance tracking & penalties | 1. Schedule an appointment. 2. Do not attend. 3. Check penalty application. | Penalty is applied as per policy. |...|...|
+| TC4 | FR4 | Validate rescheduling & cancellation | 1. Log in as a patient. 2. Navigate to existing appointment. 3. Reschedule or cancel an appointment. | The appointment is updated or cancelled successfully. |...|...|
+| TC5 | FR5 | Test non-attendance tracking & penalties | 1. Schedule an appointment. 2. Do not attend. 3. Check the penalty application. | Penalty is applied as per policy. |...|...|
 | TC6 | FR6 | Ensure secure patient data storage & compliance | 1. Access patient records as an unauthorized user. 2. Attempt to modify records. | Unauthorized access is denied. |...|...|
-| TC7 | FR7 | Verify doctor’s schedule management dashboard | 1. Log in as a doctor. 2. Check appointment dashboard. 3. Modify availability. | Dashboard shows correct schedule, modifications saved. |...|...|
-| TC8 | FR8 | Validate emergency & priority booking | 1. Log in as a patient. 2. Try booking an emergency appointment. 3. Confirm priority status. | Emergency appointment is successfully created. |...|...|
-| TC9 | FR9 | Verify multi-channel booking (web & mobile) | 1. Attempt appointment booking via web. 2. Attempt via mobile app. | Appointments can be booked through both platforms. |...|...|
+| TC7 | FR7 | Verify doctor’s schedule management dashboard | 1. Log in as a doctor. 2. Check the appointment dashboard. 3. Modify availability. | The dashboard shows the correct schedule and modifications saved. |...|...|
+| TC8 | FR8 | Validate emergency & priority booking | 1. Log in as a patient. 2. Try booking an emergency appointment. 3. Confirm priority status. | The Emergency appointment is successfully created. |...|...|
+| TC9 | FR9 | Verify multi-channel booking (web & mobile) | 1. Attempt appointment booking via the web. 2. Attempt via mobile app. | Appointments can be booked through both platforms. |...|...|
 | TC10 | FR10 | Validate clinic performance reports & analytics | 1. Log in as a healthcare admin. 2. Navigate to reports. 3. Generate performance analytics. | Reports are generated accurately. |...|...|
-| TC11 | FR11 | Ensure integration with Electronic Health Records (EHR) | 1. Log in as a doctor. 2. Access a patient's medical history from EHR. | Patient’s history is accessible from EHR system. |...|...|
+| TC11 | FR11 | Ensure integration with Electronic Health Records (EHR) | 1. Log in as a doctor. 2. Access a patient's medical history from EHR. | The patient’s history is accessible from the EHR system. |...|...|
 | TC12 | FR12 | Validate user role & permissions management | 1. Log in as an IT admin. 2. Assign roles to users. 3. Validate access permissions. | Roles & permissions are enforced correctly. |...|...|
 
 &nbsp;
 
-## Non-Functional Requirements Test Cases
+## Non-functional Requirements Test Cases
 
 #### NFR1.1 - Intuitive User Interface
 - **Scenario**: Verify the ease of navigation and usability.
@@ -214,8 +238,8 @@ Administrator
 
 #### NFR2.1 - Cloud & On-Premise Deployment
 - **Scenario**: Test system deployment on both cloud and on-premise environments.
-- **Steps**: Deploy application in both environments and validate feature consistency.
-- **Expected Result**: Application works seamlessly in both setups.
+- **Steps**: Deploy the application in both environments and validate feature consistency.
+- **Expected Result**: The application works seamlessly in both setups.
 
 #### NFR5.2 - Role-Based Access Control (RBAC)
 
@@ -223,7 +247,7 @@ Administrator
 
 - **Steps**: Log in as different user roles (Doctor, Patient, Admin) and attempt unauthorized actions.
 
-- **Expected Result**: Access is restricted based on roles, unauthorized actions are denied.
+- **Expected Result**: Access is restricted based on roles; unauthorized actions are denied.
 
 #### NFR6.1 - Fast Response Time
 - **Scenario**: Measure system response time for different operations.
