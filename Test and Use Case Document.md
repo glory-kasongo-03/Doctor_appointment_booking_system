@@ -68,7 +68,7 @@ Patient
 3. If rescheduling, the patient selects a new time slot.
 4. The system updates the appointment.
 5. A confirmation is sent.
-6. if cancelling, the appointment is removed.
+6. If cancelling, the appointment is removed.
 7. the system records the cancellation.
 8. Notifications are sent to the doctor and patient. 
 
@@ -90,7 +90,7 @@ Patient
 
 ### Basic Flow
 1. 24 hours before the appointment, the system sends a reminder.
-2. 2 hours before the appointment, a final reminder is sent.
+2. 1 hour before the appointment, a final reminder is sent.
 
 ### Alternative Flows
 - **Patient Opts Out**: If notifications are disabled, no reminders are sent.
