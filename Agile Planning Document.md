@@ -54,8 +54,6 @@
 
 **Sprint Planning - Sprint 1**
 
-**Sprint Goal:** Implement core patient registration, appointment booking, and authentication functionality.
-
 | Task ID | Task Description                                         | Assigned To        | Estimated Hours | Status |
 | ------- | -------------------------------------------------------- | ------------------ | --------------- | ------ |
 | T1      | Develop patient registration API                         | Backend Developer  | 8               | To Do  |
