@@ -3,3 +3,6 @@ It was challenging to balance Stakeholders' needs because each stakeholder and t
 
 ### Translating Requirements to Use Cases/Tests
 Translating the functional and non-functional into use cases/tests was challenging because it required a long thinking process about each actor's role and the different actions they will have to undertake while using the system. Every step needed to be mentioned and explained.
+
+### Reflection: Challenges in prioritization, estimation, or aligning Agile with stakeholder needs
+I am the only manager overseeing an Agile project, and I often find it difficult to prioritize tasks and estimate how much time each will take. Ensuring that the project aligns with user needs is also challenging. When I depend solely on my own judgment, it can result in confusion and deadlines that aren't practical. To improve, I should actively seek feedback and engage more with users to understand their needs. Additionally, staying flexible can help the project meet its objectives effectively.
