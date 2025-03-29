@@ -20,4 +20,10 @@ For example, if the **"In Progress"** column can have only three tasks, no new o
 
 - **Continuous Delivery:** Tasks are finished and delivered as soon as they are ready, without waiting for a specific release date.  
 - **Adaptability:** Teams can adjust priorities by adding, removing, or moving tasks without disrupting the workflow.  
-- **Incremental Improvements:** Regular reviews of the board help teams improve workflows, remove inefficiencies, and streamline processes over time.  
+- **Incremental Improvements:** Regular reviews of the board help teams improve workflows, remove inefficiencies, and streamline processes over time.
+
+### Customization of the Kanban Board
+
+**The Testing column** is important for checking the quality of tasks before they are marked as "Done." It lets everyone see the testing process and promotes responsibility among team members. By following Agile methods, it focuses on regular checking and validation of tasks. This column allows teams to get feedback early, so they can fix any problems quickly.
+
+**The Blocked column** shows tasks that are stuck because they rely on other things or face obstacles. This helps the team spot issues that slow down progress. It provides a clear view of the workflow and highlights which problems need priority to fix, allowing teams to continue their work and solve problems efficiently.
