@@ -11,4 +11,4 @@
 
 
 #### Chosen Template
-I chose automated Kanban because it allows for easy tracking of tasks, and it is easier to auto-move issues from the starting stage to the completion stage.
+I chose automated Kanban for my project because it allows for easy tracking of tasks, and it is easier to auto-move issues from the starting stage to the completion stage.
