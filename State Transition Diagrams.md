@@ -1,7 +1,6 @@
 ### State Transitions Diagrams
-
-%% 1. Patient Account - State Transition Diagram
 ```mermaid
+%% 1. Patient Account - State Transition Diagram
 stateDiagram-v2
     %% Initial state
     [*] --> Registered_Patient
