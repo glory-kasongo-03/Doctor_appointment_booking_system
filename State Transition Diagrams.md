@@ -1,5 +1,5 @@
 ### State Transitions Diagrams
-#### 1. Patient Account
+
 %% Patient Account - State Transition Diagram
 ```mermaid
 stateDiagram-v2
@@ -12,7 +12,6 @@ stateDiagram-v2
     Deleted_Patient --> [*]
 ```
 
-#### 2. Doctor Account
 %% Doctor Account - State Transition Diagram
 ```mermaid
 stateDiagram-v2
@@ -26,7 +25,6 @@ stateDiagram-v2
     Deactivated_Doctor --> [*]
 ```
 
-#### 3. Appointment
 %% Appointment - State Transition Diagram
 ```mermaid
 stateDiagram-v2
@@ -41,7 +39,6 @@ stateDiagram-v2
     Attended_Appointment --> [*]
 ```
 
-#### 4. Notification
 %% Notification - State Transition Diagram
 ```mermaid
 stateDiagram-v2
@@ -55,7 +52,6 @@ stateDiagram-v2
     Archived_Notification --> [*]
 ```
 
-#### 5. Electronic Health Records
 %% Electronic Health Record (EHR) State Transition Diagram
 ```mermaid
 stateDiagram-v2
@@ -67,7 +63,6 @@ stateDiagram-v2
     Archived_EHR --> [*]
 ```
 
-#### 6. User Role & Permissions
 %% User Role & Permissions - State Transition Diagram
 ```mermaid
 stateDiagram-v2
@@ -80,8 +75,6 @@ stateDiagram-v2
     Revoked_Role --> [*]
 ```
 
-
-#### 7. System Report
 %% System Report - State Transition Diagram
 ```mermaid
 stateDiagram-v2
@@ -93,7 +86,6 @@ stateDiagram-v2
     Archived_Report --> [*]
 ```
 
-#### 8. Emergency Booking
 %% Emergency Booking - State Transition Diagram
 ```mermaid
 stateDiagram-v2
