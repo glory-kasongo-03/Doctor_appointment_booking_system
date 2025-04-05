@@ -1,4 +1,4 @@
-### Activity Diagram
+### Activity Diagrams
 
 #### 1. Patient Registration Workflow
 ```mermaid
