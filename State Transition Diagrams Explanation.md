@@ -139,3 +139,19 @@ Provides administrators with real-time operational insights. Supports cost-savin
 
 **Explanation**:  
 Reduces wait time for critical care. Benefits patients and ensures receptionists and doctors are instantly notified of emergencies.
+
+&nbsp;
+
+#### State Transition Diagrams Traceability
+
+| Diagram               | Functional Requirement | User Story                 | Sprint Task    |
+|-----------------------|------------------------|----------------------------|----------------|
+| Patient Account       | FR1                    | Register & manage account  | T1, T2         |
+| Doctor Account        | FR7                    | Manage doctor profile      | T1             |
+| Appointment           | FR2, FR3, FR4, FR5     | Book, cancel, track        | T4, T5, T7     |
+| Notification          | FR3                    | Reminders for appointments | T8             |
+| EHR                   | FR11                   | View patient data          | T1             |
+| User Role & Permissions | FR12, NFR5.2         | Role access management     | T6             |
+| System Report         | FR10                   | Review system usage        | T10            |
+| Emergency Booking     | FR8                    | Book emergency slots       | T4             |
+
