@@ -6,6 +6,8 @@ This is a basic doctor appointment booking system, which will be a web and mobil
 
 #### [ARCHITECTURE](ARCHITECTURE.md)
 
+#### [ACTIVITY DIAGRAMS EXPLANATIONS](Activity%20Diagrams%20Explanation.md)
+
 #### [AGILE PLANNING DOCUMENT](Agile%20Planning%20Document.md)
 
 #### [KANBAN EXPLANATION](Kanban_explanation.md)
@@ -15,6 +17,8 @@ This is a basic doctor appointment booking system, which will be a web and mobil
 #### [SPECIFICATION](SPECIFICATION.md)
 
 #### [STAKEHOLDER ANALYSIS TABLE](Stakeholder%20Analysis%20Table.md)
+
+#### [STATE TRANSITION DIAGRAMS EXPLANATIONS](State%20Transition%20Diagrams%20Explanation.md)
 
 #### [SYSTEM REQUIREMENTS DOCUMENT](System%20Requirements%20Document.md)
 
