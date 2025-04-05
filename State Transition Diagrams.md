@@ -1,7 +1,7 @@
 ### State Transitions Diagrams
 ```mermaid
 %% 1. Patient Account - State Transition Diagram
-stateDiagram-v2
+stateDiagram
     %% Initial state
     [*] --> Registered_Patient
     Registered_Patient --> Active_Patient : Email Verified
@@ -13,7 +13,7 @@ stateDiagram-v2
 
 %% 2. Doctor Account - State Transition Diagram
 ```mermaid
-stateDiagram-v2
+stateDiagram
     %% Initial state
     [*] --> Registered_Doctor
     Registered_Doctor --> Verified_Doctor : License Approved
