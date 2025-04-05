@@ -1,6 +1,7 @@
 ### State Transitions Diagrams
+
+#### 1. Patient Account - State Transition Diagram
 ```mermaid
-%% 1. Patient Account - State Transition Diagram
 stateDiagram
     %% Initial state
     [*] --> Registered_Patient
@@ -11,7 +12,7 @@ stateDiagram
     Deleted_Patient --> [*]
 ```
 
-%% 2. Doctor Account - State Transition Diagram
+#### 2. Doctor Account - State Transition Diagram
 ```mermaid
 stateDiagram
     %% Initial state
@@ -24,9 +25,9 @@ stateDiagram
     Deactivated_Doctor --> [*]
 ```
 
-%% 3. Appointment - State Transition Diagram
+#### 3. Appointment - State Transition Diagram
 ```mermaid
-stateDiagram-v2
+stateDiagram
     %% Initial state
     [*] --> Requested_Appointment
     Requested_Appointment --> Confirmed_Appointment : Slot Available
@@ -38,9 +39,9 @@ stateDiagram-v2
     Attended_Appointment --> [*]
 ```
 
-%% 4. Notification - State Transition Diagram
+#### 4. Notification - State Transition Diagram
 ```mermaid
-stateDiagram-v2
+stateDiagram
     %% Initial state
     [*] --> Created_Notification
     Created_Notification --> Sent_Notification : Trigger Event
@@ -51,9 +52,9 @@ stateDiagram-v2
     Archived_Notification --> [*]
 ```
 
-%% 5. Electronic Health Record (EHR) State Transition Diagram
+#### 5. Electronic Health Record (EHR) State Transition Diagram
 ```mermaid
-stateDiagram-v2
+stateDiagram
     %% Initial state
     [*] --> Created_EHR
     Created_EHR --> Reviewed_EHR : Doctor Accesses
@@ -62,9 +63,9 @@ stateDiagram-v2
     Archived_EHR --> [*]
 ```
 
-%% 6. User Role & Permissions - State Transition Diagram
+#### 6. User Role & Permissions - State Transition Diagram
 ```mermaid
-stateDiagram-v2
+stateDiagram
     %% Initial state
     [*] --> Role_Assigned
     Role_Assigned --> Active_Role : User Logs In
@@ -74,9 +75,9 @@ stateDiagram-v2
     Revoked_Role --> [*]
 ```
 
-%% 7. System Report - State Transition Diagram
+#### 7. System Report - State Transition Diagram
 ```mermaid
-stateDiagram-v2
+stateDiagram
     %% Initial state
     [*] --> Scheduled_Report
     Scheduled_Report --> Generated_Report : Time Trigger
@@ -85,9 +86,9 @@ stateDiagram-v2
     Archived_Report --> [*]
 ```
 
-%% 8. Emergency Booking - State Transition Diagram
+#### 8. Emergency Booking - State Transition Diagram
 ```mermaid
-stateDiagram-v2
+stateDiagram
     %% Initial state
     [*] --> Initiated_Booking
     Initiated_Booking --> Confirmed_Booking : Slot Override
