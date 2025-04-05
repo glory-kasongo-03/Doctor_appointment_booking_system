@@ -1,6 +1,4 @@
-### Activity Diagram Explanations
-
----
+### Activity Diagrams Explanations
 
 #### **1. Patient Registration Workflow**
 
@@ -225,3 +223,19 @@
   - Patients: Fast emergency care
   - Doctors: Real-time alerts
   - Admins: Effective triage and resource allocation
+ 
+&nbsp;
+
+#### Activity Diagram Traceability
+
+| Workflow               | Functional Requirement | User Story            | Sprint Task    |
+|------------------------|------------------------|------------------------|----------------|
+| Patient Registration   | FR1                    | Register               | T1, T2         |
+| Appointment Scheduling | FR2, FR4               | Book or cancel         | T4, T5, T7     |
+| User Login             | FR1                    | Login                  | T3             |
+| Notification Dispatch  | FR3                    | Receive reminders      | T8             |
+| EHR Review             | FR11                   | Access patient data    | T1             |
+| Role Management        | FR12, NFR5.2           | Manage roles           | T6             |
+| Report Generation      | FR10                   | Generate reports       | T10            |
+| Emergency Booking      | FR8                    | Handle urgent booking  | T4             |
+
