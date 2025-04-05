@@ -1,6 +1,6 @@
 ### State Transitions Diagrams
 
-%% Patient Account - State Transition Diagram
+%% 1. Patient Account - State Transition Diagram
 ```mermaid
 stateDiagram-v2
     %% Initial state
@@ -12,7 +12,7 @@ stateDiagram-v2
     Deleted_Patient --> [*]
 ```
 
-%% Doctor Account - State Transition Diagram
+%% 2. Doctor Account - State Transition Diagram
 ```mermaid
 stateDiagram-v2
     %% Initial state
@@ -25,7 +25,7 @@ stateDiagram-v2
     Deactivated_Doctor --> [*]
 ```
 
-%% Appointment - State Transition Diagram
+%% 3. Appointment - State Transition Diagram
 ```mermaid
 stateDiagram-v2
     %% Initial state
@@ -39,7 +39,7 @@ stateDiagram-v2
     Attended_Appointment --> [*]
 ```
 
-%% Notification - State Transition Diagram
+%% 4. Notification - State Transition Diagram
 ```mermaid
 stateDiagram-v2
     %% Initial state
@@ -52,7 +52,7 @@ stateDiagram-v2
     Archived_Notification --> [*]
 ```
 
-%% Electronic Health Record (EHR) State Transition Diagram
+%% 5. Electronic Health Record (EHR) State Transition Diagram
 ```mermaid
 stateDiagram-v2
     %% Initial state
@@ -63,7 +63,7 @@ stateDiagram-v2
     Archived_EHR --> [*]
 ```
 
-%% User Role & Permissions - State Transition Diagram
+%% 6. User Role & Permissions - State Transition Diagram
 ```mermaid
 stateDiagram-v2
     %% Initial state
@@ -75,7 +75,7 @@ stateDiagram-v2
     Revoked_Role --> [*]
 ```
 
-%% System Report - State Transition Diagram
+%% 7. System Report - State Transition Diagram
 ```mermaid
 stateDiagram-v2
     %% Initial state
@@ -86,7 +86,7 @@ stateDiagram-v2
     Archived_Report --> [*]
 ```
 
-%% Emergency Booking - State Transition Diagram
+%% 8. Emergency Booking - State Transition Diagram
 ```mermaid
 stateDiagram-v2
     %% Initial state
