@@ -226,7 +226,7 @@
  
 &nbsp;
 
-#### Activity Diagram Traceability
+#### Activity Diagrams Traceability
 
 | Workflow               | Functional Requirement | User Story            | Sprint Task    |
 |------------------------|------------------------|------------------------|----------------|
