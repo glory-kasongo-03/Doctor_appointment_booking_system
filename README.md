@@ -8,6 +8,8 @@ This is a basic doctor appointment booking system, a web and mobile-based app al
 
 #### ACTIVITY DIAGRAMS
 
+- [ACTIVITY DIAGRAMS](Activity%20Diagrams.md)
+
 - [1. PATIENT REGISTRATION WORKFLOW](Patient%20Registration%20Workflow%20Activity%20Diagram.md)
 
 - [2. APPOINTMENT SCHEDULING WORKFLOW](Appointment%20Scheduling%20Workflow%20Activity%20Diagram.md)
