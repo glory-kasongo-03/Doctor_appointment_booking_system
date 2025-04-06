@@ -1,6 +1,6 @@
 #### 5. Electronic Health Record (EHR) State Transition Diagram
 ```mermaid
-stateDiagram-v2
+stateDiagram
     %% Initial state
     [*] --> Created_EHR
     Created_EHR --> Reviewed_EHR : Doctor Accesses
