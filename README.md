@@ -38,6 +38,26 @@ This is a basic doctor appointment booking system, a web and mobile-based app al
 
 #### [STAKEHOLDER ANALYSIS TABLE](Stakeholder%20Analysis%20Table.md)
 
+#### STATE TRANSITION DIAGRAMS
+
+- [STATE TRANSITION DIAGRAMS](State%20Transition%20Diagrams.md)
+
+- [1. PATIENT ACCOUNT](Patient%20Account%20State%20Transition%20Diagram.md)
+
+- [2. DOCTOR ACCOUNT](Doctor%20Account%20State%20Transition%20Diagram.md)
+
+- [3. APPOINTMENT](Appointment%20State%20Transition%20Diagram.md)
+  
+- [4. NOTIFICATION](Notification%20State%20Transition%20Diagram.md)
+
+- [5. EHR](EHR%20State%20Transition%20Diagram.md)
+
+- [6. USER ROLE & PERMISSIONS](User%20Role%20%26%20Permissions%20State%20Transition%20Diagram.md)
+
+- [7. SYSTEM REPORT](System%20Report%20State%20Transition%20Diagram.md)
+
+- [8. EMERGENCY BOOKING](Emergency%20Booking%20State%20Transition%20Diagram.md)
+
 #### [STATE TRANSITION DIAGRAMS EXPLANATIONS](State%20Transition%20Diagrams%20Explanation.md)
 
 #### [SYSTEM REQUIREMENTS DOCUMENT](System%20Requirements%20Document.md)
