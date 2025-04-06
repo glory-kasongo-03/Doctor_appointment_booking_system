@@ -1,6 +1,6 @@
 #### 3. Appointment - State Transition Diagram
 ```mermaid
-stateDiagram-v2
+stateDiagram
     %% Initial state
     [*] --> Requested_Appointment
     Requested_Appointment --> Confirmed_Appointment : Slot Available
