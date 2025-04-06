@@ -1,6 +1,6 @@
 #### 1. Patient Account - State Transition Diagram
 ```mermaid
-stateDiagram-v2
+stateDiagram
     %% Initial state
     [*] --> Registered_Patient
     Registered_Patient --> Active_Patient : Email Verified
