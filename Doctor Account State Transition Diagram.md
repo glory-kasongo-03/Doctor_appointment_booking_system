@@ -1,6 +1,6 @@
 #### 2. Doctor Account - State Transition Diagram
 ```mermaid
-stateDiagram-v2
+stateDiagram
     %% Initial state
     [*] --> Registered_Doctor
     Registered_Doctor --> Verified_Doctor : License Approved
