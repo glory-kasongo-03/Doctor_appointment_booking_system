@@ -1,6 +1,6 @@
 #### 4. Notification - State Transition Diagram
 ```mermaid
-stateDiagram-v2
+stateDiagram
     %% Initial state
     [*] --> Created_Notification
     Created_Notification --> Sent_Notification : Trigger Event
