@@ -19,7 +19,7 @@ Customising the template can take a while, as you have to familiarise yourself w
 
 - **Jira**: Jira is very customizable and suits complicated and big projects well. It offers a lot of support for Agile methods, detailed reporting, and is built to handle the needs of large enterprises.
 
-### Reflection on Assignment 8
+### Assignment 8 Reflection
 
 One of the main challenges when making UML diagrams, especially state and activity diagrams, is deciding how detailed they should be. If the diagrams have too much detail, they can become confusing and hard to understand, making it difficult for people to read them and increasing the mental effort needed. On the other hand, if there is too much generalization, important system behaviors or decision points might be missed. These are necessary for developing the system and checking if it works as expected. It's important to find the right balance. This means identifying the key transitions and actions that match what users need and grouping or simplifying less important processes that can be understood without details or found in other documents.
 
