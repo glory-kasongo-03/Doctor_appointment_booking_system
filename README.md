@@ -30,6 +30,10 @@ This is a basic doctor appointment booking system, a web and mobile-based app al
 
 #### [AGILE PLANNING DOCUMENT](Agile%20Planning%20Document.md)
 
+#### [CLASS DIAGRAM](Class%20Diagram.md)
+
+#### [DOMAIN MODEL DOCUMENTATION](Domain%20Model%20Documentation.md)
+
 #### [KANBAN EXPLANATION](Kanban_explanation.md)
 
 #### [REFLECTION](Reflection.md)
