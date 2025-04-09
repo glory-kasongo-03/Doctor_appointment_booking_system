@@ -1,4 +1,5 @@
-## Domain Model Description
+### Domain Model Description
+---
 
 | **Entity**      | **Attributes**                                                                 | **Methods**                                                   | **Relationships**                                                               |
 |------------------|--------------------------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------------------------|
@@ -10,7 +11,7 @@
 | **Notification** | `notificationId: int`, `message: string`, `status: enum`, `timestamp: datetime` | `send()`, `markAsRead()`                                       | Sent to `User`; generated on appointment events                                 |
 | **Report**       | `reportId: int`, `type: string`, `generatedOn: datetime`, `data: JSON`         | `generate()`, `export()`                                       | Managed by `Admin`; aggregates system-wide data                                 |
 
-## Business Rules
+### Business Rules
 
 - A **User** must be either a **Doctor** or **Patient**, determined by the `role` attribute.
 - A **Patient** can book a maximum of **3 active appointments** at a time.
