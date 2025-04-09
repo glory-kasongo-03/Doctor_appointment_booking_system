@@ -25,5 +25,36 @@ One of the main challenges when making UML diagrams, especially state and activi
 
 Another challenge is matching these diagrams with Agile user stories. User stories are often vague as they focus on business value and what the user wants, while diagrams need to show how the system works. For example, turning a user story like “As a patient, I want to book an appointment to see a doctor” into specific states like Requested, Confirmed, or Cancelled, or into steps like Choose Time and Confirm Slot, requires careful thought. Each diagram must be linked accurately to the user’s goal, making sure it doesn't go beyond what the story intends.
 
-State diagrams and activity diagrams serve different, yet important roles. State diagrams show how an object behaves in response to events over time. They capture the lifecycle of things like appointments or notifications and are essential for systems that rely on status-driven logic. In contrast, activity diagrams illustrate workflows or processes. They show a sequence of tasks and decisions across various roles and are effective for highlighting business processes and user interactions. Together, they give a complete view—state diagrams show what can happen to objects over time, while activity diagrams detail how tasks are carried out.
+State diagrams and activity diagrams serve different, yet important roles. State diagrams show how an object behaves in response to events over time. They capture the lifecycle of things like appointments or notifications and are essential for systems that rely on status-driven logic. In contrast, activity diagrams illustrate workflows or processes. They show a sequence of tasks and decisions across various roles and effectively highlight business processes and user interactions. Together, they give a complete view—state diagrams show what can happen to objects over time, while activity diagrams detail how tasks are carried out.
 
+### Reflection on Designing the Domain Model and Class Diagram
+
+#### 1. Challenges in Designing the Domain Model and Class Diagram
+
+Creating the domain model and class diagram for a doctor appointment booking system came with several challenges. We had to decide on the right levels of detail, understand how different parts connect, and assign the right roles to each class.
+
+Initially, one of the biggest challenges was to find the right level of abstraction for things like Appointment, User, and Doctor. We thought about combining or simplifying these parts to make our work easier, but that would make the model less flexible and harder to expand later on.
+
+Another hurdle was accurately representing how entities relate to each other within real-world constraints. The relationship between a Patient and an Appointment initially looked simple: a patient makes an appointment. But considering cancellations, rescheduling, and emergency bookings made this relationship became more complicated. Similarly, understanding doctors' availability required looking beyond just their schedules. We also needed to account for their interactions with the Receptionist team and how emergencies would be handled.
+
+It was also challenging to decide what actions each class should perform. We needed to determine if certain tasks should belong to a class or be managed by external services. For instance, should a Doctor object handle the approval of appointments, or should an Appointment object manage its status? Balancing between data and actions took time and required insight into both business needs and programming best practices.
+
+#### 2. Alignment with Previous Work
+
+The class diagram fits well with other prior work, such as use cases, state transition diagrams, activity diagrams, and functional requirements. For example, use cases like "Book Appointment" or "Register Patient" are directly related to functions like bookAppointment() or registerPatient(). The Appointment state transition diagram includes stages like Requested, Confirmed, Cancelled, and Attended, which influenced the attributes and state methods of the Appointment class.
+
+Additionally, the class responsibilities reflect action flows from activity diagrams. For instance, the Notification class aligns with the "Notification Dispatch" activity diagram, where events result in notifications being sent or logged. By anchoring the class diagram in these existing workflows, we maintain consistency in the system, making it easier to support and enhance in the future.
+
+#### 3. Trade-Offs Made
+
+We made some decisions to simplify and clarify the design. One major choice was to avoid complex inheritance hierarchies. While modeling User, Doctor, and Patient with inheritance might be tempting, it could complicate permissions and create rigid structures. Instead, we treated Doctor and Patient as separate entities while sharing user account information or managing access through a Role class.
+
+We also simplified how components are combined and connected. For example, instead of tightly integrating Electronic Health Records (EHRs) with a Patient and multiple Appointments, we let EHRs reference patients independently. This results in better modularity.
+
+#### 4. Lessons Learned in Object-Oriented Design
+
+Working on this project provided valuable lessons in object-oriented design. It's crucial for each class to have a clear purpose and to encapsulate both the data and the actions relevant to that purpose. Relationships should mirror real-life connections without being overly complex or tightly linked.
+
+Maintaining alignment among design documents—like use cases, diagrams, and code—is also important. Consistency across these elements makes the system easier to understand, discuss, and build. The exercise highlighted design as an iterative process. Initial versions may function, but often require refinements. Through feedback and an understanding of business rules and technical limitations, a solid and scalable model emerges.
+
+Overall, this experience deepened my understanding of object-oriented design principles and demonstrated how thoughtful design decisions can improve system clarity, scalability, and maintainability.
