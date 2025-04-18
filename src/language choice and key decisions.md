@@ -1,4 +1,4 @@
-## Language Choice & Design Decisions
+## Language Choice & Key Decisions
 
 ### Why Python?
 
