@@ -1,4 +1,4 @@
-from .user_account import UserAccount
+from user_account import UserAccount
 
 class SystemReport:
     def __init__(self, report_id: str, type_: str, content: str, generated_by: UserAccount):
