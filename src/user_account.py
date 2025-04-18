@@ -1,5 +1,5 @@
 from typing import List
-from .notification import Notification
+from notification import Notification
 
 class UserAccount:
     def __init__(self, user_id: str, username: str, password: str, role: str):
