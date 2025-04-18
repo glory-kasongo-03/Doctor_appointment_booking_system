@@ -1,8 +1,35 @@
-## Project Title
+# Project Title
 Doctor Appointment Booking System
 
 ### Project Description
 This is a basic doctor appointment booking system, a web and mobile-based app allowing patients to schedule medical appointments online, manage bookings, and receive reminders. Doctors will use the system to manage their different schedules; hospital administrators will be able to monitor appointment statistics and optimize scheduling efficiency. A notification service will be included to remind patients about upcoming appointments.
+
+### Justification for Each Pattern
+
+#### Simple Factory
+- **Use Case**: Centralized creation of different user roles like Patient, Doctor, Admin.
+- **Why**: Simplifies user creation logic and isolates instantiation.
+
+#### Factory Method
+- **Use Case**: Sending notifications via different channels (Email, SMS).
+- **Why**: Allows flexibility to extend new notification types without changing the core logic.
+
+#### Abstract Factory
+- **Use Case**: Rendering UI components (e.g., buttons) depending on platform (Web or Mobile).
+- **Why**: Ensures consistent UI elements across platforms.
+
+#### Builder
+- **Use Case**: Constructing complex Appointment objects step-by-step.
+- **Why**: Enhances clarity and flexibility when creating appointments with multiple fields.
+
+#### Prototype
+- **Use Case**: Quickly duplicating report templates for different users.
+- **Why**: Avoids costly re-creation and ensures performance.
+
+#### Singleton
+- **Use Case**: DatabaseConnection for the backend system.
+- **Why**: Ensures only one global connection is created to avoid conflicts and resource waste.
+
 
 #### [ARCHITECTURE](ARCHITECTURE.md)
 
