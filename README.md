@@ -61,6 +61,8 @@ This is a basic doctor appointment booking system, a web and mobile-based app al
 
 #### [DOMAIN MODEL DOCUMENTATION](Domain%20Model%20Documentation.md)
 
+#### [LANGUAGE CHOICE AND KEY DECISIONS](src/language%20choice%20and%20key%20decisions.md)
+
 #### [KANBAN EXPLANATION](Kanban_explanation.md)
 
 #### [REFLECTION](Reflection.md)
