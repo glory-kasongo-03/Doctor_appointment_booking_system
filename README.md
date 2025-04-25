@@ -1,35 +1,68 @@
 # Project Title
+
 Doctor Appointment Booking System
 
-### Project Description
+## Project Description
+
 This is a basic doctor appointment booking system, a web and mobile-based app allowing patients to schedule medical appointments online, manage bookings, and receive reminders. Doctors will use the system to manage their different schedules; hospital administrators will be able to monitor appointment statistics and optimize scheduling efficiency. A notification service will be included to remind patients about upcoming appointments.
+
+### Justification for Repository Interface Design
+
+- **Use of Generics**: Avoids duplication across entity repositories by abstracting common CRUD operations into the `IRepository` interface, reducing repetitive code.
+- **Entity-Specific Interfaces**: Allows for specialized queries, such as `find_by_email()` in `IPatientRepository` or `find_by_specialization()` in `IDoctorRepository`.
+- **Adherence to SOLID Principles**:
+  - Promotes the **Interface Segregation Principle** by ensuring interfaces are specific to the needs of each entity.
+  - Encourages the **Dependency Inversion Principle** by making components depend on abstractions rather than concrete implementations.
+- **Testability and Flexibility**: Enhances the testability of the data layer, making it easier to perform unit testing and mocking in services.
+
+### Dependency Injection VS Factory Pattern
+
+### Why Dependency Injection (DI) Over Factory Pattern?
+
+#### Dependency Injection Advantages
+
+- **Highly Testable**: Easily inject mocks or stubs during unit testing.
+- **Separation of Concerns**: Services depend on abstractions rather than specific implementations.
+- **Explicit and Flexible**: Particularly useful when working with multiple implementations (e.g., in-memory, database, cache).
+- **Framework Compatibility**: Works seamlessly with frameworks like FastAPI, Django, and Flask (with DI extensions).
+
+#### Factory Pattern Trade-offs
+
+- **Dynamic Instantiation**: Useful for creating multiple variants dynamically.
+- **Hidden Dependencies**: Can obscure dependencies, making unit testing more challenging.
+- **Potential Tight Coupling**: May lead to tightly coupled code if not carefully managed.
 
 ### Justification for Each Pattern
 
 #### Simple Factory
+
 - **Use Case**: Centralized creation of different user roles like Patient, Doctor, Admin.
 - **Why**: Simplifies user creation logic and isolates instantiation.
 
 #### Factory Method
+
 - **Use Case**: Sending notifications via different channels (Email, SMS).
 - **Why**: Allows flexibility to extend new notification types without changing the core logic.
 
 #### Abstract Factory
+
 - **Use Case**: Rendering UI components (e.g., buttons) depending on platform (Web or Mobile).
 - **Why**: Ensures consistent UI elements across platforms.
 
 #### Builder
+
 - **Use Case**: Constructing complex Appointment objects step-by-step.
 - **Why**: Enhances clarity and flexibility when creating appointments with multiple fields.
 
 #### Prototype
+
 - **Use Case**: Quickly duplicating report templates for different users.
 - **Why**: Avoids costly re-creation and ensures performance.
 
 #### Singleton
+
 - **Use Case**: DatabaseConnection for the backend system.
 - **Why**: Ensures only one global connection is created to avoid conflicts and resource waste.
-
 
 #### [ARCHITECTURE](ARCHITECTURE.md)
 
@@ -98,5 +131,3 @@ This is a basic doctor appointment booking system, a web and mobile-based app al
 #### [TEMPLATE ANALYSIS](Template_analysis.md)
 
 #### [TEST AND USE CASE DOCUMENT](Test%20and%20Use%20Case%20Document.md)
-
-
