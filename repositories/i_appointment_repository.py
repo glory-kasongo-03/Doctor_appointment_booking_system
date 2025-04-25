@@ -1,5 +1,5 @@
 from typing import List
-from Repository_Interface_Design import IRepository
+from repository_interface_design import IRepository
 from appointment import Appointment
 
 class IAppointmentRepository(IRepository[Appointment, int]):
