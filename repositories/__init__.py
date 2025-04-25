@@ -2,22 +2,24 @@
 
 # Explicitly define what should be exported when using `from repositories import *`
 __all__ = [
-    "IPatientRepository", "IDoctorRepository", "IAppointmentRepository",
-    "INotificationRepository", "IAdminRepository",
-    "Patient_InMemory", "Doctor_InMemory",
-    "Appointment_InMemory", "Notification_InMemory",
-    "Admin_InMemory"
+    "i_patient_repository", "i_doctor_repository", "i_appointment_repository",
+    "i_notification_repository", "i_admin_repository",
+    "patient_in_memory", "doctor_in_memory",
+    "appointment_in_memory", "notification_in_memory",
+    "admin_in_memory"
 ]
 
 # Import the specific components to make them accessible through the package
-from .IPatientRepository import IPatientRepository
-from .IDoctorRepository import IDoctorRepository
-from .IAppointmentRepository import IAppointmentRepository
-from .INotificationRepository import INotificationRepository
-from .IAdminRepository import IAdminRepository
+from .i_patient_repository import IPatientRepository
+from .i_doctor_repository import IDoctorRepository
+from .i_appointment_repository import IAppointmentRepository
+from .i_notification_repository import INotificationRepository
+from .i_admin_repository import IAdminRepository
+from .repository_interface_design import IRepository
 
-from .inmemory.Patient_InMemory import InMemoryPatientRepository
-from .inmemory.Doctor_InMemory import InMemoryDoctorRepository
-from .inmemory.Appointment_InMemory import InMemoryAppointmentRepository
-from .inmemory.Notification_InMemory import InMemoryNotificationRepository
-from .inmemory.Admin_InMemory import InMemoryAdminRepository
+# Import the in-memory implementations
+from .in_memory import patient_in_memory
+from .in_memory import doctor_in_memory
+from .in_memory import appointment_in_memory
+from .in_memory import notification_in_memory
+from .in_memory import admin_in_memory

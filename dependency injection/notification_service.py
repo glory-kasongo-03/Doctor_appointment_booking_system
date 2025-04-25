@@ -1,4 +1,4 @@
-from repositories.INotificationRepository import INotificationRepository
+from repositories.i_notification_repository import INotificationRepository
 from notification import Notification
 from typing import Optional
 

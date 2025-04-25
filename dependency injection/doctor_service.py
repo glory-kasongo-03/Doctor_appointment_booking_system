@@ -1,5 +1,5 @@
 # services/doctor_service.py
-from repositories.IDoctorRepository import IDoctorRepository
+from repositories.i_doctor_repository import IDoctorRepository
 from doctor import Doctor
 from typing import List
 

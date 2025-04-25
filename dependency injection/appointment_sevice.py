@@ -1,7 +1,7 @@
 # services/appointment_service.py
 from typing import List
 from appointment import Appointment
-from repositories.IAppointmentRepository import IAppointmentRepository
+from repositories.i_appointment_repository import IAppointmentRepository
 
 class AppointmentService:
     def __init__(self, repository: IAppointmentRepository):

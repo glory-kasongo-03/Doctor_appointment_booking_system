@@ -1,4 +1,4 @@
-from repositories.IAdminRepository import IAdminRepository
+from repositories.i_admin_repository import IAdminRepository
 from user_account import Admin
 from typing import Optional
 
