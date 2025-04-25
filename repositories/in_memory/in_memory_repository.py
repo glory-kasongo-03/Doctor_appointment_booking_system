@@ -1,5 +1,5 @@
 from typing import Dict, Generic, List, Optional, TypeVar
-from Repository_Interface_Design import IRepository  # Assuming you already defined this
+from repositories.repository_interface_design import IRepository  # Assuming you already defined this
 
 T = TypeVar('T')
 ID = TypeVar('ID')

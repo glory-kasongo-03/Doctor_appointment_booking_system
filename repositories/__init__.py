@@ -23,12 +23,9 @@ from repositories import i_notification_repository
 from .i_patient_repository import IPatientRepository
 from .i_doctor_repository import IDoctorRepository
 from .i_appointment_repository import IAppointmentRepository
-from .i_notification_repository import INotificationRepository
-from .i_admin_repository import IAdminRepository
+
 
 # Import the in-memory implementations
 from .in_memory import patient_in_memory
 from .in_memory import doctor_in_memory
 from .in_memory import appointment_in_memory
-from .in_memory import notification_in_memory
-from .in_memory import admin_in_memory
