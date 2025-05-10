@@ -1,0 +1,27 @@
+# Web framework
+fastapi
+uvicorn[standard]
+
+# Data validation and settings
+pydantic
+
+# Dependency Injection
+python-dependency-injector
+
+# Database (if using SQLAlchemy; otherwise let me know)
+sqlalchemy
+databases
+asyncpg  # Use this only if you're using PostgreSQL
+
+# Testing
+pytest
+httpx  # For async HTTP client testing with FastAPI
+pytest-asyncio
+
+# Development tools
+black
+isort
+mypy
+
+# Environment variables
+python-dotenv
