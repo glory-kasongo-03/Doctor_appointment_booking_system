@@ -1,4 +1,5 @@
 # main.py
+# This is the main entry point for the FastAPI application.
 
 from fastapi import FastAPI
 from routers.patient_router import router as patient_router
