@@ -5,6 +5,9 @@ uvicorn[standard]
 # Data validation and settings
 pydantic
 
+# Dependency Injection
+python-dependency-injector
+
 # Database (if using SQLAlchemy; otherwise let me know)
 sqlalchemy
 databases
