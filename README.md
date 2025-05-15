@@ -28,7 +28,6 @@ pytest
 | Admin dashboard                  | Planned | ROADMAP.md                |
 | Docker containerization          | Ongoing | Open Issue                |
 
-
 ### Justification for Repository Interface Design
 
 - **Use of Generics**: Avoids duplication across entity repositories by abstracting common CRUD operations into the `IRepository` interface, reducing repetitive code.
