@@ -1,7 +1,7 @@
 
 # Contributing to Doctor Appointment Booking System
 
-Thanks for your interest in contributing! 
+Thanks for your interest in contributing!
 This project uses FastAPI, Python 3.10+, and GitHub Actions for CI/CD.
 
 ## Setup Instructions
