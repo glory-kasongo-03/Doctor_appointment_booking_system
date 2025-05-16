@@ -8,25 +8,35 @@ This is a basic doctor appointment booking system, a web and mobile-based app al
 
 ### Getting Started
 
+#### Prerequisites
+
+- Python 3.10 or higher
+- `pip` (Python package manager)
+- `git`
+- A GitHub account
+
+#### Installation
+
 ```bash
 git clone https://github.com/your-username/doctor-appointment-booking.git
 cd doctor-appointment-booking
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-uvicorn doctor_appointment_booking.main:app --reload
-pytest
 ```
 
 ### Features for Contribution
 
-| Feature                          | Status     | Contribution Guide       |
-|----------------------------------|------------|---------------------------|
-| Unit tests for all services      | Ongoing | Open Issue                |
-| Redis caching                    | Planned | ROADMAP.md                |
-| Email reminder system            | Planned | ROADMAP.md                |
-| Admin dashboard                  | Planned | ROADMAP.md                |
-| Docker containerization          | Ongoing | Open Issue                |
+| Feature                          | Status     | Contribution Guide       | Label       |
+|----------------------------------|------------|---------------------------|------------|
+| Integrate Redis for caching doctor availability| Planned | Open Issue     | Enhancement    |
+| Support optional email reminders for patients  | Planned | Open Issue     | Enhancement    |
+| Add appointment filtering by date and doctor   | Planned | Open Issue     | Enhancement    |
+| Improve formatting in README.md                | Planned | Open Issue     | Good First Issue     |
+| Add 404 handler for unknown routes             | Planned | Open Issue     | Good First Issue     |
+| Fix typo in error message for doctor login failure  | Planned | Open Issue     | Good First Issue     |
+| Add unit tests for NotificationService               | Planned | Open Issue     | Good First Issue     |
+| Add docstrings to all service methods             | Planned | Open Issue     | Good First Issue      |
 
 ### Justification for Repository Interface Design
 
