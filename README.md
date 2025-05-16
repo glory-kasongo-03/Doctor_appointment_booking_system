@@ -1,155 +1,146 @@
-# Project Title
+# 🩺 Doctor Appointment Booking System
 
-Doctor Appointment Booking System
+## 📋 Project Description
 
-## Project Description
+A basic doctor appointment booking system – a web and mobile-based application enabling patients to:
 
-This is a basic doctor appointment booking system, a web and mobile-based app allowing patients to schedule medical appointments online, manage bookings, and receive reminders. Doctors will use the system to manage their different schedules; hospital administrators will be able to monitor appointment statistics and optimize scheduling efficiency. A notification service will be included to remind patients about upcoming appointments.
+* Schedule medical appointments online
+* Manage bookings
+* Receive automated reminders
 
-### Getting Started
+Doctors can manage their schedules, and hospital administrators can track statistics and optimize operations. A notification service is integrated for upcoming appointment reminders.
+
+---
+
+## 🚀 Getting Started
 
 ```bash
 git clone https://github.com/your-username/doctor-appointment-booking.git
 cd doctor-appointment-booking
 python -m venv venv
-source venv/bin/activate
+source venv/bin/activate          # On Windows, use: venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn doctor_appointment_booking.main:app --reload
 pytest
 ```
 
-### Features for Contribution
+---
 
-| Feature                          | Status     | Contribution Guide       |
-|----------------------------------|------------|---------------------------|
-| Unit tests for all services      | Ongoing | Open Issue                |
-| Redis caching                    | Planned | ROADMAP.md                |
-| Email reminder system            | Planned | ROADMAP.md                |
-| Admin dashboard                  | Planned | ROADMAP.md                |
-| Docker containerization          | Ongoing | Open Issue                |
+## 🛠️ Features for Contribution
 
-### Justification for Repository Interface Design
+| Feature                     | Status  | Contribution Guide |
+| --------------------------- | ------- | ------------------ |
+| Unit tests for all services | Ongoing | Open Issue         |
+| Redis caching               | Planned | `ROADMAP.md`       |
+| Email reminder system       | Planned | `ROADMAP.md`       |
+| Admin dashboard             | Planned | `ROADMAP.md`       |
+| Docker containerization     | Ongoing | Open Issue         |
 
-- **Use of Generics**: Avoids duplication across entity repositories by abstracting common CRUD operations into the `IRepository` interface, reducing repetitive code.
-- **Entity-Specific Interfaces**: Allows for specialized queries, such as `find_by_email()` in `IPatientRepository` or `find_by_specialization()` in `IDoctorRepository`.
-- **Adherence to SOLID Principles**:
-  - Promotes the **Interface Segregation Principle** by ensuring interfaces are specific to the needs of each entity.
-  - Encourages the **Dependency Inversion Principle** by making components depend on abstractions rather than concrete implementations.
-- **Testability and Flexibility**: Enhances the testability of the data layer, making it easier to perform unit testing and mocking in services.
+---
 
-### Dependency Injection VS Factory Pattern
+## 📐 Justification for Repository Interface Design
 
-### Why Dependency Injection (DI) Over Factory Pattern?
+* **Use of Generics**
+  Abstracts common CRUD operations into `IRepository` to reduce duplication.
 
-#### Dependency Injection Advantages
+* **Entity-Specific Interfaces**
+  Enables custom queries such as `find_by_email()` in `IPatientRepository`.
 
-- **Highly Testable**: Easily inject mocks or stubs during unit testing.
-- **Separation of Concerns**: Services depend on abstractions rather than specific implementations.
-- **Explicit and Flexible**: Particularly useful when working with multiple implementations (e.g., in-memory, database, cache).
-- **Framework Compatibility**: Works seamlessly with frameworks like FastAPI, Django, and Flask (with DI extensions).
+* **Adherence to SOLID Principles**
 
-#### Factory Pattern Trade-offs
+  * Interface Segregation: Interfaces tailored for each entity
+  * Dependency Inversion: Components depend on abstractions
 
-- **Dynamic Instantiation**: Useful for creating multiple variants dynamically.
-- **Hidden Dependencies**: Can obscure dependencies, making unit testing more challenging.
-- **Potential Tight Coupling**: May lead to tightly coupled code if not carefully managed.
+* **Testability and Flexibility**
+  Improves unit testing and service mocking via dependency injection.
 
-### Justification for Each Pattern
+---
 
-#### Simple Factory
+## ⚔️ Dependency Injection vs Factory Pattern
 
-- **Use Case**: Centralized creation of different user roles like Patient, Doctor, Admin.
-- **Why**: Simplifies user creation logic and isolates instantiation.
+### ✅ Why Dependency Injection?
 
-#### Factory Method
+* **Highly Testable** – Easy mock injection
+* **Separation of Concerns** – Abstraction-driven design
+* **Flexible** – Supports multiple implementations (e.g., DB, cache)
+* **Framework Friendly** – Integrates well with FastAPI, Django, Flask
 
-- **Use Case**: Sending notifications via different channels (Email, SMS).
-- **Why**: Allows flexibility to extend new notification types without changing the core logic.
+### ❗ Factory Pattern Trade-offs
 
-#### Abstract Factory
+* **Good For** – Dynamic object creation
+* **Downsides** – Obscured dependencies, tighter coupling, harder to test
 
-- **Use Case**: Rendering UI components (e.g., buttons) depending on platform (Web or Mobile).
-- **Why**: Ensures consistent UI elements across platforms.
+---
 
-#### Builder
+## 🧱 Design Pattern Justifications
 
-- **Use Case**: Constructing complex Appointment objects step-by-step.
-- **Why**: Enhances clarity and flexibility when creating appointments with multiple fields.
+| Pattern          | Use Case                                   | Justification                                 |
+| ---------------- | ------------------------------------------ | --------------------------------------------- |
+| Simple Factory   | Create user roles (Patient, Doctor, Admin) | Centralized logic, easier role management     |
+| Factory Method   | Sending notifications (Email, SMS)         | Flexibility to extend new channels            |
+| Abstract Factory | Render platform-specific UI (Web/Mobile)   | Consistent UI components per platform         |
+| Builder          | Constructing complex Appointment objects   | Step-by-step clarity and flexibility          |
+| Prototype        | Duplicate report templates                 | Efficient cloning, saves performance          |
+| Singleton        | Maintain a single database connection      | Avoids conflicts and excessive resource usage |
 
-#### Prototype
+---
 
-- **Use Case**: Quickly duplicating report templates for different users.
-- **Why**: Avoids costly re-creation and ensures performance.
+## 📂 Documentation Index
 
-#### Singleton
+### 📄 Architecture & Planning
 
-- **Use Case**: DatabaseConnection for the backend system.
-- **Why**: Ensures only one global connection is created to avoid conflicts and resource waste.
+* [ARCHITECTURE.md](ARCHITECTURE.md)
+* [Agile Planning Document](Agile%20Planning%20Document.md)
+* [Language Choice & Key Decisions](src/language%20choice%20and%20key%20decisions.md)
+* [Kanban Explanation](Kanban_explanation.md)
+* [Specification](SPECIFICATION.md)
+* [Reflection](Reflection.md)
+* [Stakeholder Analysis Table](Stakeholder%20Analysis%20Table.md)
 
-#### [ARCHITECTURE](ARCHITECTURE.md)
+---
 
-#### ACTIVITY DIAGRAMS
+### 📊 Activity Diagrams
 
-- [ACTIVITY DIAGRAMS](Activity%20Diagrams.md)
+* [Activity Diagrams](Activity%20Diagrams.md)
 
-- [1. PATIENT REGISTRATION WORKFLOW](Patient%20Registration%20Workflow%20Activity%20Diagram.md)
+  * [Patient Registration](Patient%20Registration%20Workflow%20Activity%20Diagram.md)
+  * [Appointment Scheduling](Appointment%20Scheduling%20Workflow%20Activity%20Diagram.md)
+  * [User Login](User%20Login%20Workflow%20Activity%20Diagram.md)
+  * [Notification Dispatch](Notification%20Dispatch%20Activity%20Diagram.md)
+  * [EHR Review](EHR%20Review%20Activity%20Diagram.md)
+  * [Role Management](Role%20Management%20Activity%20Diagram.md)
+  * [Report Generation](Report%20Generation%20Activity%20Diagram.md)
+  * [Emergency Booking](Emergency%20Booking%20Activity%20Diagram.md)
+* [Activity Diagram Explanations](Activity%20Diagrams%20Explanation.md)
 
-- [2. APPOINTMENT SCHEDULING WORKFLOW](Appointment%20Scheduling%20Workflow%20Activity%20Diagram.md)
+---
 
-- [3. USER LOGIN WORKFLOW](User%20Login%20Workflow%20Activity%20Diagram.md)
+### 🔄 State Transition Diagrams
 
-- [4. NOTIFICATION DISPATCH](Notification%20Dispatch%20Activity%20Diagram.md)
+* [State Transition Diagrams](State%20Transition%20Diagrams.md)
 
-- [5. EHR](EHR%20Review%20Activity%20Diagram.md)
+  * [Patient Account](Patient%20Account%20State%20Transition%20Diagram.md)
+  * [Doctor Account](Doctor%20Account%20State%20Transition%20Diagram.md)
+  * [Appointment](Appointment%20State%20Transition%20Diagram.md)
+  * [Notification](Notification%20State%20Transition%20Diagram.md)
+  * [EHR](EHR%20State%20Transition%20Diagram.md)
+  * [User Role & Permissions](User%20Role%20%26%20Permissions%20State%20Transition%20Diagram.md)
+  * [System Report](System%20Report%20State%20Transition%20Diagram.md)
+  * [Emergency Booking](Emergency%20Booking%20State%20Transition%20Diagram.md)
+* [State Diagram Explanations](State%20Transition%20Diagrams%20Explanation.md)
 
-- [6. ROLE MANAGEMENT](Role%20Management%20Activity%20Diagram.md)
+---
 
-- [7. REPORT GENERATION](Report%20Generation%20Activity%20Diagram.md)
+### 🧪 Testing & Templates
 
-- [8. EMERGENCY BOOKING](Emergency%20Booking%20Activity%20Diagram.md)
+* [Test and Use Case Document](Test%20and%20Use%20Case%20Document.md)
+* [Template Analysis](Template_analysis.md)
 
-#### [ACTIVITY DIAGRAMS EXPLANATIONS](Activity%20Diagrams%20Explanation.md)
+---
 
-#### [AGILE PLANNING DOCUMENT](Agile%20Planning%20Document.md)
+### 🧬 Class & Domain Models
 
-#### [CLASS DIAGRAM](Class%20Diagram.md)
+* [Class Diagram](Class%20Diagram.md)
+* [Domain Model Documentation](Domain%20Model%20Documentation.md)
 
-#### [DOMAIN MODEL DOCUMENTATION](Domain%20Model%20Documentation.md)
 
-#### [LANGUAGE CHOICE AND KEY DECISIONS](src/language%20choice%20and%20key%20decisions.md)
-
-#### [KANBAN EXPLANATION](Kanban_explanation.md)
-
-#### [REFLECTION](Reflection.md)
-
-#### [SPECIFICATION](SPECIFICATION.md)
-
-#### [STAKEHOLDER ANALYSIS TABLE](Stakeholder%20Analysis%20Table.md)
-
-#### STATE TRANSITION DIAGRAMS
-
-- [STATE TRANSITION DIAGRAMS](State%20Transition%20Diagrams.md)
-
-- [1. PATIENT ACCOUNT](Patient%20Account%20State%20Transition%20Diagram.md)
-
-- [2. DOCTOR ACCOUNT](Doctor%20Account%20State%20Transition%20Diagram.md)
-
-- [3. APPOINTMENT](Appointment%20State%20Transition%20Diagram.md)
-  
-- [4. NOTIFICATION](Notification%20State%20Transition%20Diagram.md)
-
-- [5. EHR](EHR%20State%20Transition%20Diagram.md)
-
-- [6. USER ROLE & PERMISSIONS](User%20Role%20%26%20Permissions%20State%20Transition%20Diagram.md)
-
-- [7. SYSTEM REPORT](System%20Report%20State%20Transition%20Diagram.md)
-
-- [8. EMERGENCY BOOKING](Emergency%20Booking%20State%20Transition%20Diagram.md)
-
-#### [STATE TRANSITION DIAGRAMS EXPLANATIONS](State%20Transition%20Diagrams%20Explanation.md)
-
-#### [SYSTEM REQUIREMENTS DOCUMENT](System%20Requirements%20Document.md)
-
-#### [TEMPLATE ANALYSIS](Template_analysis.md)
-
-#### [TEST AND USE CASE DOCUMENT](Test%20and%20Use%20Case%20Document.md)
