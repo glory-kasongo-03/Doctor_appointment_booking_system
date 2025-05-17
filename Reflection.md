@@ -58,3 +58,18 @@ Working on this project provided valuable lessons in object-oriented design. It'
 Maintaining alignment among design documents—like use cases, diagrams, and code—is also important. Consistency across these elements makes the system easier to understand, discuss, and build. The exercise highlighted design as an iterative process. Initial versions may function, but often require refinements. Through feedback and an understanding of business rules and technical limitations, a solid and scalable model emerges.
 
 Overall, this experience deepened my understanding of object-oriented design principles and demonstrated how thoughtful design decisions can improve system clarity, scalability, and maintainability.
+
+### Reflection on Assignment 14
+
+#### 1. How i improved my repository based on peer feedback
+
+We concentrated on improving the repository's organization and readability to make it simpler for new contributors to use, based on input from peers. By clearly classifying project components and providing a step-by-step setup and testing guide, we were able to increase the visibility and detail of contribution pathways. To make sure the issues were clear, actionable, and arranged according to their difficulty or goal, we also updated and added details to the ones that already existed. This made it easier for possible contributors to find tasks that matched their interests or skill level.
+
+#### 2. Challenges in onboarding contributors
+
+Making the repository accessible to new users who were not familiar with the codebase was one of the biggest challenges. At first, contributors found it difficult to get started because some issues lacked sufficient context. We improved the issue descriptions to address this by adding links to related features, pertinent file references, and more explicit objectives. We had to carefully group project modules, services, and routes in a way that made the architecture self-explanatory in order to ensure that the repository's structure supported intuitive navigation.
+
+#### 3. Lessons learned about open-source collaboration
+
+Communication, consistency, and clarity are essential for open-source collaboration. The barrier to entry is greatly reduced when newcomers are given well-scoped, labeled issues and a friendly contribution guide. More participation and fewer inquiries can result from even minor changes to the project's documentation or design. We also discovered that because automation (such as CI pipelines and formatting checks) streamlines the review process and helps maintain quality, it increases confidence among contributors and maintainers.
+
